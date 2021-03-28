@@ -1,0 +1,24 @@
+.specialties
+    padding-top: 40px
+    padding-bottom: 100px
+    background: url(../img/specialtys-bg.jpg) no-repeat center / cover
+    color: $light
+    text-align: center
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__img
+        position: relative
+        padding-left: 80px
+        &::before
+            position: absolute
+            top: 50%
+            margin-top: -125px
+            left: 0
+            content: ''
+            width: 230px
+            height: 230px
+            background: none
+            border: 20px solid $primory;
+            border-radius: 5px

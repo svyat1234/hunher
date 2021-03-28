@@ -1,0 +1,82 @@
+.hero
+  position: relative
+  margin-top: -179px
+  background: url(../img/header-bg.jpg) no-repeat center / cover
+  padding-top: 326px
+  color: $light
+  padding-bottom: 225px
+
+  &::before
+    position: absolute
+    bottom: 113px
+    left: 50%
+    margin-left: -20px
+    content: ''
+    width: 40px
+    height: 40px
+    background: $light
+    border-radius: 50%
+    background: $light url(../img/arrow-down.svg) no-repeat center
+    cursor: pointer
+  &::after
+    position: absolute
+    bottom: 102px
+    left: 50%
+    margin-left: -31px
+    content: ''
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer
+    
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+  &__social-links
+    display: flex
+    flex-direction: column
+
+  &__social__link
+    width: 60px
+    height: 60px
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    border-radius: 50%
+    margin-bottom: 20px
+  &__timetable__block
+    transform: rotate(-90deg)
+    margin-left: -140px
+  &__title
+    position: relative
+    text-transform: uppercase
+    font-family: 'Banny Round'
+    font-size: 8rem
+    &::before
+      position: absolute
+      bottom: 0px
+      left: 50%
+      margin-left: -30px
+      content: ''
+      width: 60px
+      height: 5px
+      background: $primory
+      border-radius: 50px
+
+  &__info__block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__buttons
+    max-width: 440px
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &__button
+    width: 200px
+    height: 60px
+
+.buttons
+  margin-top: 30px

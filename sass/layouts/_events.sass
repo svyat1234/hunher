@@ -1,0 +1,80 @@
+.events
+    padding-top: 40px
+    background: url(../img/events-bg.jpg) no-repeat center / cover
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-top: 40px
+        margin-bottom: 40px
+    &__img
+        position: relative
+        width: 575px
+        height: 475px
+        &--primory
+            background: url(../img/events.jpg) no-repeat 130px / cover
+            &--text
+                position: absolute
+                right: 0
+                top: 50%
+                margin-top: -44px
+                margin-right: -198px
+                width: 476px
+                background: black
+                color: $light
+                transform: rotate(90deg)
+                font-family: Banny Round;
+                font-size: 24px;
+                text-transform: uppercase
+                padding-left: 20px
+                padding-top: 28px
+                padding-bottom: 28px
+            &::before
+                position: absolute
+                top: 50%
+                margin-top: -130px
+                left: 0
+                content: ''
+                width: 230px
+                height: 230px
+                background: none
+                border: 20px solid $primory;
+                border-radius: 5px
+        &--secondary
+            background: url(../img/events2.jpg) no-repeat center / cover
+            background-position: right 130px top
+            &--text
+                position: absolute
+                left: 0
+                top: 50%
+                margin-top: -44px
+                margin-left: -198px
+                width: 476px
+                background: black
+                color: $light
+                transform: rotate(-90deg)
+                font-family: Banny Round;
+                font-size: 24px;
+                text-transform: uppercase
+                padding-left: 20px
+                padding-top: 28px
+                padding-bottom: 28px
+            &::before
+                position: absolute
+                top: 50%
+                margin-top: -130px
+                right: 0
+                content: ''
+                width: 230px
+                height: 230px
+                background: none
+                border: 20px solid $primory;
+                border-radius: 5px
+    &__info
+        color: $translucentwhite
+        display: flex
+        justify-content: center
+        padding-bottom: 40px
+    &__pictures
+        margin-top: 40px
+        display: flex
+        justify-content: center

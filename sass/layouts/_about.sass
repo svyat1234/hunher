@@ -1,0 +1,23 @@
+.about
+  padding-top: 100px
+  padding-bottom: 80px
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: center
+
+  &__img
+    position: relative
+    padding-right: 80px
+    &::before
+      position: absolute
+      top: 50%
+      margin-top: -150px
+      right: 0
+      content: ''
+      width: 230px
+      height: 230px
+      background: none
+      border: 20px solid $primory;
+      border-radius: 5px
